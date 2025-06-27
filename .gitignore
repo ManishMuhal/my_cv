@@ -1,0 +1,32 @@
+# dependencies
+/node_modules
+
+# production
+/.next
+/out
+
+# testing
+/coverage
+
+# local env files
+.env.local
+.env.*.local
+
+# Next.js build output
+.next
+build
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# misc
+.DS_Store
+
+# vercel
+.vercel
+
+# local IDE settings
+.vscode
+.idea
