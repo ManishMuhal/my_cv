@@ -7,7 +7,7 @@ import HeroAreaAbout from './HeroAreaAbout';
 import BrandAreaAbout from './BrandAreaAbout';
 import FooterFour from '@/layouts/footers/FooterFour';
 import HeaderFour from '@/layouts/headers/HeaderFour';
-import AwardAreaHomeOne from '../homes/home/AwardAreaHomeOne';
+// import AwardAreaHomeOne from '../homes/home/AwardAreaHomeOne';
 
 
 const About = () => {
@@ -21,7 +21,7 @@ const About = () => {
             <AboutInfo />
             <PersonalInfo />
             <FunfactArea />
-            <AwardAreaHomeOne style_2={true} />
+            {/* <AwardAreaHomeOne style_2={true} /> */}
             <BrandAreaAbout />
           </main>
           <FooterFour />
