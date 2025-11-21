@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Breadcrumb = () => {
@@ -8,8 +7,13 @@ const Breadcrumb = () => {
         <div className="container">
           <div className="row">
             <div className="blog-list__title-box">
-              <span className="blog-list__subtitle tp-char-animation">Opps ! This Page Could Not Be Found</span>
-              <h4 className="blog-list__title tp-char-animation">Error 404</h4>
+              <span className="blog-list__subtitle tp-char-animation">
+                This Page Is Currently Under Construction
+              </span>
+              
+              <h4 className="blog-list__title tp-char-animation">
+                Under Construction
+              </h4>
             </div>
           </div>
         </div>

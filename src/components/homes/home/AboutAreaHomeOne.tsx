@@ -21,27 +21,38 @@ type DataType = {
 
 const about_content: DataType = {
   subtitle: "About Me",
-  award_title: "Independent Of The Year",
-  award_des: "Annual Awards 2020 • awwwards.com",
-  about_des: <>Hello! I'm <span>Diego</span> a self-taught & award-winning <span>Digital Designer & Developer</span> with over <span>fifteen  years of work experience</span>. I started in my children's room and got pro at renowned digital<span> nexum AG</span> agencies.</>,
+  award_title: "Top Performing Frontend Developer",
+  award_des: "Recognized for high-quality UI engineering & clean architecture.",
+  about_des: (
+    <>
+      Hello! I'm <span>Manish Kumar</span>, a passionate{" "}
+      <span>Frontend Developer</span> specializing in{" "}
+      <span>React.js, Next.js, TypeScript & modern UI engineering</span>.  
+      <br />
+      With <span>2.5+ years of experience</span>, I’ve built HRMS systems, admin dashboards,
+      cricket & fantasy apps, and scalable SaaS interfaces.  
+      <br />
+      I focus on writing clean, reusable, high-performance UI with strong attention to detail.
+    </>
+  ),
   counter_data: [
     {
       id: 1,
-      count: 180,
-      text: "Project Delivered",
+      count: 40,
+      text: "Projects Delivered",
     },
     {
       id: 2,
-      count: 13,
+      count: 3,
       text: "Years of Experience",
     },
     {
       id: 3,
-      count: 40,
-      text: "Happy Clients",
-    }
+      count: 25,
+      text: "Happy Clients / Companies",
+    },
   ],
-}
+};
 
 const { subtitle, award_title, award_des, about_des, counter_data } = about_content
 

@@ -31,83 +31,109 @@ interface DataType {
   }[];
 }
 const skill_content: DataType = {
-  subtitle: "Advantage",
-  title: "Skills & tools",
-  info: "For those who know what they're looking for..",
+  subtitle: "Skills",
+  title: "Tech Stack & Tools",
+  info: "A mix of modern technologies I use to build high-performance applications.",
   skill_data: [
     {
       tab_id: "tech",
       items: [
         {
-          img: skill_img_1,
-          title: "Angular",
-          percent: 85
+          img: skill_img_4, // HTML icon
+          title: "HTML5",
+          percent: 97,
         },
         {
-          img: skill_img_2,
-          title: "WordPress",
-          percent: 95
+          img: skill_img_4, // CSS icon (replace with actual CSS img)
+          title: "CSS3",
+          percent: 94,
         },
         {
-          img: skill_img_3,
-          title: "NodeJS",
-          percent: 60
+          img: skill_img_4, // JS icon (use your JS image)
+          title: "JavaScript (ES6+)",
+          percent: 90,
+        },
+        {
+          img: skill_img_4, // React icon
+          title: "React.js",
+          percent: 92,
+        },
+        {
+          img: skill_img_4, // Next.js
+          title: "Next.js",
+          percent: 88,
+        },
+        {
+          img: skill_img_4, // TS icon
+          title: "TypeScript",
+          percent: 85,
         },
         {
           img: skill_img_4,
-          title: "HTML",
-          percent: 97
+          title: "Redux Toolkit",
+          percent: 87,
         },
         {
-          img: skill_img_5,
-          title: "Webflow",
+          img: skill_img_4,
+          title: "Zustand",
           percent: 80,
         },
         {
-          img: skill_img_6,
-          title: "Vue",
-          percent: 90
-        }
-      ],
-    },
-    {
-      tab_id: "design",
-      items: [
+          img: skill_img_4,
+          title: "React Query",
+          percent: 85,
+        },
         {
-          img: skill_img_7,
-          title: "Figma",
+          img: skill_img_4,
+          title: "Material UI",
           percent: 95,
         },
         {
-          img: skill_img_8,
-          title: "Sketch",
-          percent: 82
+          img: skill_img_4,
+          title: "Tailwind CSS",
+          percent: 90,
         },
         {
-          img: skill_img_9,
-          title: "Photoshop",
-          percent: 98
+          img: skill_img_4,
+          title: "API Integration",
+          percent: 93,
+        },
+      ],
+    },
+
+    {
+      tab_id: "tools",
+      items: [
+        {
+          img: skill_img_7, // figma
+          title: "Figma",
+          percent: 90,
         },
         {
-          img: skill_img_10,
-          title: "Adobe XD",
-          percent: 85
+          img: skill_img_11, // inVision or placeholder
+          title: "Git & GitHub",
+          percent: 85,
         },
         {
           img: skill_img_11,
-          title: "InVision",
-          percent: 90
+          title: "Chrome DevTools",
+          percent: 88,
         },
         {
-          img: skill_img_12,
-          title: "Illustrator",
-          percent: 80
-        }
-
+          img: skill_img_11,
+          title: "VS Code",
+          percent: 92,
+        },
+        {
+          img: skill_img_11,
+          title: "API Debugging Tools",
+          percent: 80,
+        },
       ],
-    }
-  ]
-}
+    },
+  ],
+};
+
 const { subtitle, title, info, skill_data } = skill_content
 
 const SkillAreaHomeOne = () => {

@@ -12463,7 +12463,7 @@ html[tp-theme=tp-theme-light] .cursor-white #ball {
 }
 .tp-hero-thumb img {
   mix-blend-mode: hard-light;
-  max-width: 100%;
+  max-width: 100% !important
 }
 .tp-hero-thumb-shape-1, .tp-hero-thumb-shape-2, .tp-hero-thumb-shape-3 {
   position: absolute;

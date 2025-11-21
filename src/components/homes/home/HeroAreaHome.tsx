@@ -1,11 +1,10 @@
-'use client' 
+'use client'
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { scroller } from 'react-scroll';
-import {animatedHeadline} from '@/utils/animatedHeadline';
+import { animatedHeadline } from '@/utils/animatedHeadline';
 import HeroHand from "@/assets/img/hero/hero-hand.png";
-import HeroArrowIcon from '@/svg/home/HeroIcons/HeroArrowIcon';
 import { HeroSocialLinks } from '@/components/common/SocialLinks';
 import HeroShape1 from '@/assets/img/hero/shape/hero-shape-1.png';
 import HeroShape2 from '@/assets/img/hero/shape/hero-shape-2.png';
@@ -23,18 +22,25 @@ interface DataType {
 
 const hero_content: DataType = {
   slide_text: [
-    "Visual designer",
-    "Visual designer",
+    "Frontend Developer",
+    "React Developer",
+    "Next.js Developer",
   ],
   sub_title: "Hello There!",
-  title_1: "I am diego",
-  words: ["Web", "App", "UX"],
-  title_2: "designer",
-  sm_info: <>The combination of my passion for design, code & <br /> interaction web design world.</>,
+  title_1: "I am ",
+  words: ["Frontend", "React", "UI/UX", "Next.js"],
+  title_2: "Developer",
+  sm_info: (
+    <>
+      I build high-quality, responsive & performance-optimized web
+      interfaces using modern technologies like React & Next.js.
+    </>
+  ),
   btn_text: <>Get <br /> In Touch</>,
+};
 
-}
-const { slide_text, sub_title, title_1, words, title_2, sm_info, btn_text } = hero_content;
+
+const { slide_text, sub_title, title_1, words, title_2, sm_info,} = hero_content;
 
 // scroll to tp-sv section 
 const scrollTo = () => {
@@ -58,7 +64,7 @@ const HeroAreaHome = () => {
 
   useEffect(() => {
     animatedHeadline()
-  },[])
+  }, [])
 
   return (
     <>
@@ -108,19 +114,7 @@ const HeroAreaHome = () => {
 
                   </h3>
                   <p>{sm_info}</p>
-                  <div className="tp-hero-btn wrap">
-                    <div className="tp-hover-btn-wrapper tp-btn-bounce">
-                      <Link href="/contact" className="tp-hover-btn tp-hover-btn-item tp-btn-circle square">
-                        <span className="tp-btn-circle-text" >
-                          {btn_text}
-                        </span>
-                        <span className="tp-btn-circle-arrow">
-                          <HeroArrowIcon />
-                        </span>
-                        <i className="tp-btn-circle-dot"></i>
-                      </Link>
-                    </div>
-                  </div>
+         
                   <div className="tp-hero-scroll smooth">
                     <a className="pointer" onClick={scrollTo}>
                       <span className="tp-hero-scroll-bar"></span>
@@ -138,7 +132,7 @@ const HeroAreaHome = () => {
                   <span className="tp-hero-thumb-shape-3"></span>
                 </div>
                 <div className="tp-hero-thumb">
-                  <Image src={HeroImage} style={{ height: 'auto' }} alt="diego-image" />
+                  <Image src={HeroImage} style={{ height: '700px',}} alt="diego-image" />
                 </div>
               </div>
             </div>

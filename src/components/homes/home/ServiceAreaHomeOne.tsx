@@ -21,55 +21,71 @@ interface DataType {
 
 const service_content: DataType = {
   subtitle: "Services",
-  title: <>Solution <br /> we provide.</>,
-  sm_des: <>The combination of my passion for design, code & <br /> interaction web design world.</>,
+  title: <>What <br /> I Can Do For You.</>,
+  sm_des: (
+    <>
+      I specialize in building modern, high-performance, clean and scalable
+      frontend applications using React, Next.js & TypeScript.
+      <br />
+      I turn UI/UX into fully functional, pixel-perfect responsive interfaces.
+    </>
+  ),
   accordion_data: [
     {
       id: 1,
       tab_id: "One",
-      question: "UI/UX Design",
-      answer: "Project systematization is something I place a lot of emphasis on. My passion Design Systems.",
+      question: "Frontend Development",
+      answer:
+        "I build clean, optimized and scalable frontend interfaces using React.js, Next.js, TypeScript, Redux, Zustand and modern UI libraries.",
       some_features: [
-        "Interface design",
-        "Creating design systems",
-        "Ui kits",
-      ]
+        "Pixel-perfect UI development",
+        "High performance & optimized code",
+        "Reusable component architecture",
+        "SPA / SSR / SSG using Next.js",
+      ],
     },
     {
       id: 2,
       tab_id: "Two",
-      question: "Design Systems",
-      answer: "Project systematization is something I place a lot of emphasis on. My passion Design Systems.",
+      question: "Admin Panel Development",
+      answer:
+        "I create powerful, fast and clean admin dashboards for HRMS, CRM, SaaS, Fantasy gaming & Analytics platforms.",
       some_features: [
-        "Interface design",
-        "Creating design systems",
-        "Ui kits",
-      ]
+        "Role-based dashboards",
+        "Complex data tables & filters",
+        "Charts, graphs & analytics UI",
+        "API integration & state management",
+      ],
     },
     {
       id: 3,
       tab_id: "Three",
-      question: "Website Design",
-      answer: "Project systematization is something I place a lot of emphasis on. My passion Design Systems.",
+      question: "API Integration & State Management",
+      answer:
+        "I integrate REST APIs using React Query, Redux, Zustand & Axios with perfect error handling and loading states.",
       some_features: [
-        "Interface design",
-        "Creating design systems",
-        "Ui kits",
-      ]
+        "React Query / Redux Toolkit",
+        "Secure & scalable API integration",
+        "Error, loading & empty states",
+        "Auth token handling",
+      ],
     },
     {
       id: 4,
       tab_id: "Four",
-      question: "Branding",
-      answer: "Project systematization is something I place a lot of emphasis on. My passion Design Systems.",
+      question: "UI Optimization & Bug Fixing",
+      answer:
+        "I improve performance, remove UI glitches, fix responsiveness issues and enhance overall user experience.",
       some_features: [
-        "Interface design",
-        "Creating design systems",
-        "Ui kits",
-      ]
-    }
-  ]
-}
+        "Performance optimization",
+        "Responsive UI fixes",
+        "Code cleanup & refactoring",
+        "Design consistency improvements",
+      ],
+    },
+  ],
+};
+
 
 const { subtitle, title, sm_des, accordion_data } = service_content;
 
@@ -96,7 +112,8 @@ const ServiceAreaHomeOne = () => {
             <div className="row gx-0">
 
               <div className="col-xl-6 col-lg-7">
-                <div className="tp-services-wrapper tp-services-capsule-wrapper p-relative pt-100 pr-70" style={{ paddingTop: "100px", }}
+                <div className="tp-services-wrapper tp-services-capsule-wrapper p-relative pt-100 pr-70"
+                  style={{ paddingTop: "100px", }}
                   data-tp-throwable-scene="true">
                   <div className="tp-section-title-wrapper tp_text_anim mb-170">
                     <div className="tp-section-title-inner p-relative">
@@ -107,47 +124,41 @@ const ServiceAreaHomeOne = () => {
                   </div>
 
                   <div className="tp-services-capsule-item-wrapper">
-                    <p data-tp-throwable-el="">
-                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Frontend</span>
-                    </p>
-                    <p data-tp-throwable-el="">
-                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#FF759C" }}>Phototyping</span>
-                    </p>
-                    <p data-tp-throwable-el="">
-                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>Design solutions</span>
-                    </p>
-                    <p data-tp-throwable-el="">
-                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>Consulting</span>
-                    </p>
-                    <p data-tp-throwable-el="">
-                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Brand strategy</span>
-                    </p>
-                    <p data-tp-throwable-el="">
-                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>Consulting</span>
-                    </p>
-                    <p data-tp-throwable-el="">
-                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Brand strategy</span>
-                    </p>
-                    <p data-tp-throwable-el="">
-                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#19B3F1" }}>UI/UX Design</span>
-                    </p>
-                    <p data-tp-throwable-el="">
-                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#FF759C" }}>Design Audit</span>
-                    </p>
-                    <p data-tp-throwable-el="">
-                      <span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>Testing</span>
-                    </p>
-                    <p data-tp-throwable-el="">
-                      <span className="">
-                        <Image src={shape_1} alt="brand-img" />
-                      </span>
-                    </p>
-                    <p data-tp-throwable-el="">
-                      <span className="">
-                        <Image src={shape_2} alt="brand-img" />
-                      </span>
-                    </p>
+
+                    {/* Core Frontend */}
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>React.js</span></p>
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#19B3F1" }}>Next.js</span></p>
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>TypeScript</span></p>
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#FF759C" }}>JavaScript (ES6+)</span></p>
+
+                    {/* State Management */}
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Redux Toolkit</span></p>
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#19B3F1" }}>Zustand</span></p>
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#FF759C" }}>React Query</span></p>
+
+                    {/* UI Libraries */}
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Material UI</span></p>
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>Ant Design</span></p>
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#19B3F1" }}>Tailwind CSS</span></p>
+
+                    {/* API & Tools */}
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#FF759C" }}>API Integration</span></p>
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#FFDB59", color: "#121212" }}>Axios</span></p>
+
+                    {/* Performance */}
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>Optimization</span></p>
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#19B3F1" }}>Lazy Loading</span></p>
+
+                    {/* Product Specific */}
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#FF759C" }}>Admin Dashboard</span></p>
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#00CC97" }}>HRMS UI</span></p>
+                    <p data-tp-throwable-el=""><span className="tp-services-capsule-item" style={{ backgroundColor: "#19B3F1" }}>Cricket App UI</span></p>
+
+                    <p data-tp-throwable-el=""><span><Image src={shape_1} alt="brand-img" /></span></p>
+                    <p data-tp-throwable-el=""><span><Image src={shape_2} alt="brand-img" /></span></p>
+
                   </div>
+
 
                 </div>
               </div>
